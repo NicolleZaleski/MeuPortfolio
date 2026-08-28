@@ -1,0 +1,11 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Parte direcionada ao Menu Superior */
+.menuSuperior{
+    width: 100%;
+    height: 120px;
+}
