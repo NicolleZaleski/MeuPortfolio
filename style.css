@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Montserrat', sans-serif;
 }
 
 /* #region MENU */
@@ -10,7 +13,8 @@
     width: 100%;
     height: 90px;
     background-color: rgb(19, 27, 21);
-    border-bottom: 2px solid rgb(44,63,27);
+    /* box-shadow: 0 8px 15px rgb(44, 63, 27); */
+    border-bottom: 2px solid rgba(44, 63, 27, 0.397);
 }
 
 .navMenu{
@@ -21,10 +25,11 @@
     height: 100%;
 }
 
+
 /* #region logo */
 /* Logo do canto superior à esquerda */
 .logo{
-    padding: 0 0 0 55px;
+    padding-left: 55px;
 }
 
 .logo img{
@@ -56,5 +61,96 @@
 }
 
 /* !!!!!! Tem coisa a fazer aqui!!!!!!!!!! */
+
+/* #endregion */
+
+/* #endregion */
+
+/* #region PARTE INICIAL */
+
+/* Parte da Direita da Página Inicial */
+.page1{
+    width: 100%;
+    height: 700px;
+    background-color: rgb(19, 27, 21);
+    border-bottom: 2px solid rgba(44, 63, 27, 0.397);
+}
+
+.page1 .areaExterna{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100%;
+}
+
+/* #region Parte Direita */
+.page1 .areaExterna .parteDireita{
+    display: flex;
+    flex-direction: column;
+    padding-left: 120px;
+    
+}
+
+/* #region Parte Superior */
+.page1 .areaExterna .parteDireita .areaSuperior{
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+/* !!!!!!!!!!! Quero colocar aquele movimento de digitar e ir aparecendo */
+
+/* #region Escrita */
+.areaSuperior .subtitulo{
+    padding-top: 100px;
+    font-size: 25px;
+    font-weight: 500;
+    color: rgb(76,114,41);    
+}
+
+.areaSuperior .titulo .nome{
+    padding-top: 35px;
+    font-size: 80px;
+    font-weight: 600;
+    line-height: 0.9;
+    color: rgb(255,243,204);
+}
+
+.areaSuperior .titulo .sobrenome{
+    display: flex;
+    flex-direction: row;
+}
+
+.sobrenome{
+    font-size: 90px;
+    font-weight: 600;
+}
+
+.sobrenome .texto{
+    color: rgb(255,243,204);
+}
+
+.sobrenome .ponto{
+    color: rgb(182,140,6);
+}
+
+/* #endregion */
+
+/* #endregion */
+
+/* #region Parte Inferior */
+.page1 .areaExterna .parteDireita .areaInferior{
+    
+}
+
+
+/* #endregion */
+
+
+
+
+/* #endregion */
+
+/* #endregion */
 
 /* #endregion */

@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./style.css"> 
     <link rel="stylesheet" href="./script.js">
     <!-- link dos icones -->
-    <link href="https://cdn.boxicons.com/3.0.8/fonts/basic/boxicons.min.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
 
@@ -32,40 +32,49 @@
     </header>
 
     <!-- Parte inicial do portfólio -->
-    <main class="Page1">
+    <main class="page1">
         <!-- Dividindo os textos do "simbolo" -->
-        <div class="areaSuperior"> 
-            <div class="conteudo">
-                <!-- subtitulo e título -->
-                <p class="subtitulo">OLÁ, EU SOU</p>
-                <div class="titulo">
-                    <title class="nome">Nicolle</title>
-                    <class class="sobrenome">
-                        <title>Zaleski</title>
-                        <title>.</title>
-                    </class>
+        <div class="areaExterna">
+            <div class="parteDireita"> 
+                <!-- parte que fica a introdução e meu nome -->
+                <div class="areaSuperior">
+                    <!-- subtitulo -->
+                     <div class="subtitulo">
+                        <p>OLÁ, EU SOU</p>
+                     </div>
+                    <!-- meu nome -->
+                    <div class="titulo">
+                        <p class="nome">Nicolle</p>
+                        <class class="sobrenome">
+                            <p class="texto">Zaleski</p>
+                            <p class="ponto">.</p>
+                        </class>
+                    </div>
+                </div>
+
+                <!-- Onde ficará a frase e os botões da página inicial-->
+                <div class="areaInferior">
+                    <p class="fraseInicial">lallaaaaaaa</p>
+                    <div class="botoes">
+                        <button class="verProjetos">
+                            <p>VER PROJETOS</p>
+                            <i class="bx bx-arrow-right"></i> <!-- ícone de seta -->
+                        </button>
+                    <!-- Estou pensando se colocarei este segundo -->
+                        <button class="baixarCurriculo">
+                            <p>DOWNLOADO DO CV</p>
+                            <i class="bx bx-arrow-to-bottom-stroke"></i> <!-- ícone de download -->
+                        </button> 
+                    </div>
                 </div>
             </div>
             <!-- Simbolo que ficará à esquerda -->
-            <div class="imagem">
-                 <img src="/assents/simbolo/Simbolo.png" alt="" id="simbolo">
+            <div class="parteEsquerda">
+                <img src="/assents/simbolo/Simbolo.png" alt="" id="simbolo">
             </div>
-        </div>
-        
-        <!-- Onde ficará a frase e os botões da página inicial-->
-        <div class="areaInferior">
-             <p class="fraseInicial"></p>
-             <div class="botoes">
-               <button class="verProjetos">
-                    <p>VER PROJETOS</p>
-                    <i class="bx bx-arrow-right"></i> <!-- ícone de seta -->
-               </button>
-               <!-- Estou pensando se colocarei este segundo -->
-                <button class="baixarCurriculo">
-                    <p>DOWNLOADO DO CV</p>
-                    <i class="bx bx-arrow-to-bottom-stroke"></i> <!-- ícone de download -->
-                </button> 
-             </div>
+            
+            
+            
         </div>
     </main>
 
