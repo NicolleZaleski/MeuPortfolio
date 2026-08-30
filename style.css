@@ -293,33 +293,6 @@
     font-size: 20px;
     color: rgb(255,243,204);
 }
-
-.botaoSobreMim{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 5px 3px 1px 2px;
-    gap: 10px;
-    background-color: rgb(9, 13, 10);
-    border-bottom: 3px solid rgb(76,114,41);
-    border-top: none;
-    border-left: none;
-    border-right: none;
-}
-
-.botaoSobreMim span{
-    font-size: 20px;
-    font-weight: 600;
-    background: linear-gradient(to right, #4C7229, #4C7229, #817F15, #B68C00);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.botaoSobreMim i{
-    font-size: 22px;
-    color: rgb(182,140,6);
-}
 /* #endregion */
 
 /* Divisor vertical */
