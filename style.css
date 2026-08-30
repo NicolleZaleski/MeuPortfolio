@@ -13,8 +13,8 @@
     width: 100%;
     height: 90px;
     background-color: rgb(19, 27, 21);
-    /* box-shadow: 0 8px 15px rgb(44, 63, 27); */
-    border-bottom: 2px solid rgba(44, 63, 27, 0.397);
+    border-bottom: 2px solid rgba(44, 63, 27, 0.801);
+    position: fixed;
 }
 
 .navMenu{
@@ -51,7 +51,7 @@
 }
 
 .listaMenu .itemMenu{
-    font-size: 25px;
+    font-size: 22px;
     
 }
 
@@ -71,9 +71,9 @@
 /* Parte da Direita da Página Inicial */
 .page1{
     width: 100%;
-    height: 700px;
-    background-color: rgb(19, 27, 21);
-    border-bottom: 2px solid rgba(44, 63, 27, 0.397);
+    height: 750px;
+    background: linear-gradient( 120deg, #090D0A, #090D0A, #090D0A, #090D0A, #172513, #090D0A, #090D0A);
+    border-bottom: 2px solid rgba(44, 63, 27, 0.801);
 }
 
 .page1 .areaExterna{
@@ -83,45 +83,43 @@
     height: 100%;
 }
 
-/* #region Parte Direita */
-.page1 .areaExterna .parteDireita{
+/* #region Parte Esquerda */
+.page1 .areaExterna .parteEsquerda{
     display: flex;
     flex-direction: column;
     padding-left: 120px;
-    
+    gap: 45px;
+    width: 55%;
 }
 
-/* #region Parte Superior */
-.page1 .areaExterna .parteDireita .areaSuperior{
-    display: flex;
-    flex-direction: column;
-    gap: 0;
-}
 
 /* !!!!!!!!!!! Quero colocar aquele movimento de digitar e ir aparecendo */
 
 /* #region Escrita */
-.areaSuperior .subtitulo{
-    padding-top: 100px;
+.parteEsquerda .subtitulo{
+    padding-top: 190px;
     font-size: 25px;
     font-weight: 500;
     color: rgb(76,114,41);    
 }
 
-.areaSuperior .titulo .nome{
-    padding-top: 35px;
+.parteEsquerda .titulo {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.nome{
     font-size: 80px;
     font-weight: 600;
     line-height: 0.9;
     color: rgb(255,243,204);
 }
 
-.areaSuperior .titulo .sobrenome{
+.sobrenome{
     display: flex;
     flex-direction: row;
-}
-
-.sobrenome{
+    gap: 0;
     font-size: 90px;
     font-weight: 600;
 }
@@ -134,22 +132,106 @@
     color: rgb(182,140,6);
 }
 
-/* #endregion */
+.fraseInicial{
+    font-size: 25px;
+    color: rgb(255,243,204);
+}
 
-/* #endregion */
+/* #region Botões Iniciais */
+.botoesIniciais{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
 
-/* #region Parte Inferior */
-.page1 .areaExterna .parteDireita .areaInferior{
-    
+.verProjetos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgb(19, 27, 21);
+    border: 3px solid rgb(182,140,6);
+    padding: 10px 25px;
+    gap: 10px;
+}
+
+.verProjetos:hover{
+    background-color: rgb(182,140,6);
+    color: rgb(255,243,204);
+}
+.verProjetos:hover p, .verProjetos:hover i{
+    color: rgb(255,243,204);
+}
+
+.verProjetos p{
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(182,140,6);
+}
+
+.verProjetos i{
+    font-size: 25px;
+    color: rgb(182,140,6);
 }
 
 
+/* #region Não sei se colocarei essa parte */
+.baixarCurriculo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px 2px 5px 2px;
+    gap: 10px;
+    background: linear-gradient(to right, #090D0A, #1b2b17, #090D0A, #1b2b17, #090D0A, #1b2b17, #090D0A);
+    border-bottom: 3px solid rgb(76,114,41);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.baixarCurriculo p{
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(255,243,204);
+}
+
+.baixarCurriculo i{
+    font-size: 20px;
+    color: rgb(255,243,204);
+}
+/* #endregion */
+
+/* #nedregion */
+
+
+
+
+/* #endregion */
+
 /* #endregion */
 
 
 
 
 /* #endregion */
+
+
+/* #region Parte Direita */
+
+.page1 .areaExterna .parteDireita{
+    display: flex;
+    align-items: center;
+    width: 45%;
+}
+
+.parteDireita img{
+    width: 60%;
+    height: auto;
+    padding-bottom: 50px;
+}
+
+/* #endregion */
+
 
 /* #endregion */
 
