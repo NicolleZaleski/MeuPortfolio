@@ -235,4 +235,164 @@
 
 /* #endregion */
 
+/* #region SOBRE MIM */
+.page2{
+    width: 100%;
+    height: 520px;
+    background-color: rgb(9, 13, 10);
+    border-bottom: 2px solid rgba(44, 63, 27, 0.801);
+}
+
+.page2 .areaExterna{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+}
+
+.page2 .areaExterna .areaPonto{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    padding-right: 20px;
+    width: 15%;
+}
+
+.page2 .areaExterna .ponto{
+    margin-top: 113px;
+    width: 17px;
+    height: 17px;
+    border-radius: 100%;
+    background-color: rgb(76,114,41);
+}
+
+.page2 .areaExterna .uniao{
+    display: flex;
+    flex-direction: row;
+}
+
+/* #region Parte do meio de Sobre mim */
+.page2 .areaExterna .textoBotoes{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 50px;
+    width: 50%;
+    height: 100%;
+}
+
+.textoBotoes .subtitulo{
+    font-size: 25px;
+    font-weight: 600;
+    color: rgb(255,243,204); 
+}
+
+.textoSobreMim{
+    width: 90%;
+    font-size: 20px;
+    color: rgb(255,243,204);
+}
+
+.botaoSobreMim{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px 3px 1px 2px;
+    gap: 10px;
+    background-color: rgb(9, 13, 10);
+    border-bottom: 3px solid rgb(76,114,41);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.botaoSobreMim span{
+    font-size: 20px;
+    font-weight: 600;
+    background: linear-gradient(to right, #4C7229, #4C7229, #817F15, #B68C00);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.botaoSobreMim i{
+    font-size: 22px;
+    color: rgb(182,140,6);
+}
+/* #endregion */
+
+/* Divisor vertical */
+.page2 .areaExterna .areaDivisor{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.page2 .areaExterna .divisor{
+    width: 3px;
+    height: 65%;
+    background-color: rgba(121, 250, 0, 0.103);
+}
+
+/* #region Informações Adicionais */
+.page2 .areaExterna .informacoesAdicionais{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: auto;
+}
+
+.informacoesAdicionais .categorias{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    margin-left: 90px;
+    height: 100%;
+}
+
+.formacao, .premio, .tecnico{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.simboloFormar, .simboloPremio, .simboloTecnico{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    border: 1px solid rgba(76, 114, 41, 0.404);
+    border-radius: 100%;
+}
+
+.topicos{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 16px;
+    font-weight: 300;
+    color: rgb(255,243,204);
+}
+
+.simboloFormar i{
+    color: rgb(76,114,41);
+    font-size: 30px;
+}
+
+.simboloPremio i{
+    color: rgb(182,140,6);
+    font-size: 40px;
+}
+
+.simboloTecnico i{
+    color: rgb(182,140,6);
+    font-size: 40px;
+}
+
+/* #endregion */
+
+
 /* #endregion */
