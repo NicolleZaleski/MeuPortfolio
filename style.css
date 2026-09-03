@@ -250,50 +250,42 @@
     height: 100%;
 }
 
-.page2 .areaExterna .areaPonto{
+.textoConteudo{
     display: flex;
     flex-direction: column;
-    align-items: end;
-    padding-right: 20px;
-    width: 15%;
+    width: 60%;
 }
 
-.page2 .areaExterna .ponto{
-    margin-top: 113px;
+/* #region tema das partes 1 e 2 */
+.tema{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    padding: 90px 0 0 86px;
+}
+
+.tema .ponto{
     width: 17px;
     height: 17px;
     border-radius: 100%;
     background-color: rgb(76,114,41);
 }
 
-.page2 .areaExterna .uniao{
-    display: flex;
-    flex-direction: row;
-}
-
-/* #region Parte do meio de Sobre mim */
-.page2 .areaExterna .textoBotoes{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    gap: 50px;
-    width: 50%;
-    height: 100%;
-}
-
-.textoBotoes .subtitulo{
+.tema p{
     font-size: 25px;
     font-weight: 600;
     color: rgb(255,243,204); 
 }
+/* #endregion */
 
-.textoSobreMim{
-    width: 90%;
+.textoConteudo .textoSobreMim{
+    width: 80%;
+    padding: 50px 0 0 120px;
     font-size: 20px;
     color: rgb(255,243,204);
 }
-/* #endregion */
+
 
 /* Divisor vertical */
 .page2 .areaExterna .areaDivisor{
@@ -304,7 +296,7 @@
 }
 .page2 .areaExterna .divisor{
     width: 3px;
-    height: 80%;
+    height: 75%;
     background-color: rgba(121, 250, 0, 0.103);
 }
 
@@ -312,7 +304,6 @@
 .page2 .areaExterna .informacoesAdicionais{
     display: flex;
     flex-direction: column;
-    width: 50%;
     height: auto;
 }
 
@@ -374,3 +365,111 @@
 
 
 /* #endregion */
+
+
+
+
+/* #region PROJETOS */
+
+/* area projeto */
+.page3{
+    width: 100%;
+    height: 650px;
+    background-color: rgb(9, 13, 10);
+    border-bottom: 2px solid rgba(44, 63, 27, 0.801);
+}
+
+.page3 .areaExterna{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+/* #region Região dos CARD */
+.areaCards{
+    display: flex;
+    flex-direction: row;
+    margin: 50px 0 0 120px;
+    gap: 30px;
+}
+
+.areaCards .cardProjeto{
+    position: relative;
+    width: 450px;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 15px;
+    border: 1px solid rgb(76,114,41);
+    background-color: #131714;
+    transition: transform 0.3s ease;
+}
+
+.primeirasInfos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+/* imagens dos cards 1 e 3 */
+.imagemProjeto{
+    width: 100%;
+    height: 265px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.imagemProjeto img{
+    width: 432px;
+    height: auto;
+    border-radius: 12px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease,
+                filter 0.5s ease;
+}
+
+/* imagem do card 2 */
+.imagemProjeto2{
+    width: 100%;
+    height: 265px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.imagemProjeto2 .img1, .imagemProjeto2 .img2{
+    height: 250px;
+}
+
+.primeirasInfos .cardNome{
+    padding: 25px 35px;
+}
+
+.primeirasInfos .cardNome p{
+    font-size: 23px;
+    font-weight: 600;
+    color: rgb(76,114,41);
+}
+
+/* #region MINI CARD */
+.infosCard{
+    
+}
+/* #endregion */
+
+/* #endregion */
+
+/* #endregion */
+
