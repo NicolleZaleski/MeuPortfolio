@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+html{
+    scroll-behavior: smooth;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -28,12 +32,12 @@
 
 /* #region logo */
 /* Logo do canto superior à esquerda */
-.logo{
+.navMenu .logo{
     padding-left: 55px;
 }
 
-.logo img{
-    width: 60px;
+.navMenu .logo img{
+    width: 50px;
     height: auto;
 }
 
@@ -51,12 +55,23 @@
 
 .listaMenu .itemMenu{
     font-size: 22px;
-    
+    font-weight: 600;
 }
 
 .listaMenu .itemMenu a{
     text-decoration: none;
     color: rgb(182,140,6);
+    opacity: 0.6;
+    transition: all 0.3s ease;
+}
+
+.listaMenu .itemMenu a:hover{
+    opacity: 0.9;
+}
+
+.listaMenu .itemMenu a.ativo{
+    opacity: 1;
+    font-weight: 900;
 }
 
 /* !!!!!! Tem coisa a fazer aqui!!!!!!!!!! */
@@ -74,6 +89,7 @@
     height: 750px;
     background: linear-gradient( 120deg, #090D0A, #090D0A, #090D0A, #090D0A, #172513, #090D0A, #090D0A);
     border-bottom: 2px solid rgba(44, 63, 27, 0.801);
+    scroll-margin-top: 90px;
 }
 
 .page1 .areaExterna{
@@ -153,6 +169,7 @@
     border: 3px solid rgb(182,140,6);
     padding: 10px 25px;
     gap: 10px;
+    text-decoration: none;
 }
 
 .verProjetos:hover{
@@ -242,6 +259,7 @@
     height: 550px;
     background-color: rgb(9, 13, 10);
     border-bottom: 2px solid rgba(44, 63, 27, 0.801);
+    scroll-margin-top: 90px;
 }
 
 .page2 .areaExterna{
@@ -376,6 +394,7 @@
     height: 660px;
     background-color: rgb(9, 13, 10);
     border-bottom: 2px solid rgba(44, 63, 27, 0.801);
+    scroll-margin-top: 90px;
 }
 
 .page3 .areaExterna{
@@ -562,7 +581,7 @@
 /* #region RODAPÉ */
 .rodape{
     width: 100%;
-    height: 80px;
+    height: 70px;
     background-color: rgb(19, 27, 21);
     border-bottom: 2px solid rgba(44, 63, 27, 0.801);
 }
@@ -575,11 +594,11 @@
     height: 100%;
 }
 
-.logo{
+.navRodape .logo{
     padding-left: 30px;
 }
 
-.logo img{
+.navRodape .logo img{
     width: 40px;
     height: auto;
 }
