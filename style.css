@@ -432,8 +432,11 @@
     border-radius: 12px;
     object-fit: cover;
     display: block;
-    transition: transform 0.3s ease,
-                filter 0.5s ease;
+    transition: filter 0.45s ease, transform 0.45s ease;
+}
+
+.cardProjeto:hover .imagemProjeto img{
+    filter: brightness(0.75);
 }
 
 /* imagem do card 2 */
@@ -449,8 +452,16 @@
     position: relative;
 }
 
-.imagemProjeto2 .img1, .imagemProjeto2 .img2{
-    height: 250px;
+.imagemProjeto2 .img1, 
+.imagemProjeto2 .img2{
+    object-fit: cover;
+    display: block;
+    height: 240px;
+    transition: filter 0.45s ease, transform 0.45s ease;
+}
+.cardProjeto:hover .imagemProjeto2 .img1,
+.cardProjeto:hover .imagemProjeto2 .img2{
+    filter: brightness(0.75);
 }
 
 .primeirasInfos .cardNome{
@@ -461,13 +472,87 @@
     font-size: 23px;
     font-weight: 600;
     color: rgb(76,114,41);
+    transition: opacity 0.3s ease;
+}
+.cardProjeto:hover .cardNome p{
+    opacity: 0;
+    visibility: hidden;
 }
 
 /* #region MINI CARD */
 .infosCard{
-    
+    position: absolute;
+    left: 35px;
+    right: 35px;
+    bottom: 25px;
+    height: 210px;
+    box-sizing: border-box;
+    z-index: 3;
+    border-radius: 15px;
+    border: 1px solid rgb(76,114,41);
+    background-color: rgba(19, 23, 20, 0.89);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    transform: translateY(120%);
+    transition: transform 0.45s ease;
+}
+
+.cardProjeto:hover .infosCard{
+    transform: translateY(0);
+}
+
+.infosCard .conteudo{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px;
+    height: calc(100% - 40px);
+}
+
+.tituloCard{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    color: rgb(76,114,41);
+}
+
+.tituloCard i{
+    font-size: 30px;
+}
+
+.tituloCard p{
+    font-size: 22px;
+    font-weight: 800;
+}
+
+.infosCard .informacao{
+    padding-top: 10px;
+    font-size: 18px;
+    font-weight: 300;
+    color: rgb(255,243,204);
+    line-height: 1;
+}
+
+.btnVerMais{
+    margin-top: auto;
+    width: fit-content;
+    background-color: transparent;
+    border: none;
+    color: rgb(182,140,6);
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.btnVerMais i{
+    font-size: 19px;
 }
 /* #endregion */
+
 
 /* #endregion */
 
