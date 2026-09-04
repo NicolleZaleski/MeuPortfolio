@@ -374,7 +374,7 @@
 /* area projeto */
 .page3{
     width: 100%;
-    height: 650px;
+    height: 660px;
     background-color: rgb(9, 13, 10);
     border-bottom: 2px solid rgba(44, 63, 27, 0.801);
 }
@@ -509,6 +509,7 @@
     height: calc(100% - 40px);
 }
 
+/* titulo do mini card */
 .tituloCard{
     display: flex;
     flex-direction: row;
@@ -534,6 +535,7 @@
     line-height: 1;
 }
 
+/* Botão que abre o pop-up */
 .btnVerMais{
     margin-top: auto;
     width: fit-content;
