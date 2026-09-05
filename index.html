@@ -60,10 +60,10 @@
                         <i class="fa-solid fa-arrow-right-long"></i> <!-- ícone de seta -->    
                     </a>
                     <!-- Estou pensando se colocarei este segundo -->
-                    <button class="baixarCurriculo">
+                    <a href="./assents/documentos/curriculo-Nicolle-Zaleski.pdf" download class="baixarCurriculo">
                         <p>DOWNLOADO DO CV</p>
                         <i class="fa-solid fa-download"></i> <!-- ícone de download -->
-                    </button> 
+                    </a> 
                 </div>
             </div>
             <!-- Simbolo que ficará à esquerda -->
@@ -253,6 +253,48 @@
             </div>
         </div>
     </main>
+
+    <!-- Pop-up com detalhes do projeto -->
+    <div class="popUpProjetos">
+        <div class="conteudoPopup">
+            <!-- Parte que contém o nome do projeto e botão de fechar -->
+            <div class="parteSuperior">
+                <!-- Titulo -->
+                <div class="tituloPopup">
+                    <p id="modalTitulo"></p>
+                </div>
+                <!-- botão de fechar -->
+                <button class="btnFechar" onclick="fecharProjeto">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+
+            <!-- Conteúdo do projetocom todas as informações e galeria -->
+            <div class="informacoesProjeto">
+                <!-- Descrição do Projeto -->
+                <div class="descricaoProjeto">
+                    <div id="projetoDescricao"></div>
+                </div>
+
+                <!-- Informações adicionais -->
+                <div class="informacaoProjetoPopup">
+                    <!-- Meu papel no projeto -->
+                     <div class="infoPopup">
+                        <p class="subtitulo">Meu Papel</p>
+                        <p id="popupPapel"></p>
+                     </div>
+                    <!-- Tecnologias utilizadas no projeto -->
+                     <div class="infoPopup">
+                        <p class="subtitulo">Tecnologias</p>
+                        <p id="popupTecnologias"></p>
+                     </div>
+                </div>
+
+                <!-- Galeria -->
+                <div class="galeriaProjeto" id="projetoGaleria"></div>
+            </div>
+        </div>
+    </div>
 
 
     <footer class="rodape">
