@@ -581,6 +581,132 @@ html{
 
 /* #endregion */
 
+
+/* #region POP-UP PROJETO */
+
+/* estrutura de fora do pop-up */
+.popUpProjetos{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 1000;
+    inset: 0;
+    /* background-color: rgba(19, 23, 20, 0.89);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px); */
+    box-sizing: border-box;
+    padding: 30px;
+}
+
+.popUpProjetos.aberto{
+    display: flex;
+}
+
+.conteudoPopup{
+    position: relative;
+    width: 90%;
+    max-width: 1000px;
+    max-height: 90vh;
+    overflow-y: auto;
+    background-color: rgb(19, 27, 21);
+    border: 1px solid rgb(76,114,41);
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+.conteudoPopup .parteSuperior{
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+/* Botão de Fechar */
+.btnFechar{
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    background-color: transparent;
+    border: none;
+    color: rgba(76, 114, 41, 0.856);
+    font-size: 28px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.btnFechar{
+    color: rgb(76,114,41);
+}
+
+/* Título do projeto */
+.tituloPopup{
+    padding: 40px 50px 20px;
+}
+
+.popupTitulo{
+    font-size: 30px;
+    font-weight: 700;
+    color: rgb(76,114,41);
+}
+
+/* #region Conteúdo detalho do projeto */
+.informacoesProjeto{
+    padding: 10px 50px 50px;
+}
+
+/* Texto descrição  */
+.descricaoProjeto{
+    max-width: 850px;
+    font-size: 18px;
+    color: rgb(255,243,204);
+}
+
+/* Papel no projeto e tecnologias utilizadas */
+.informacaoProjetoPopup{
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+.infoPopup{
+    max-width: 400px;
+}
+
+.infoPopup .subtitulo{
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    color: rgb(182,140,6);
+}
+
+.popupPapel{
+    font-size: 16px;
+    color: rgb(255,243,204);
+}
+
+/* Galeria do Projeto */
+.galeriaProjeto{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.galeriaProjeto img,
+.galeriaProjeto video{
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    border-radius: 12px;
+    border: 1px solid rgb(76,114,41);
+}
+/* #endregion */
+
+/* #endregion */
+
+
 /* #region RODAPÉ */
 .rodape{
     width: 100%;
