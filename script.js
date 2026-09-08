@@ -53,7 +53,8 @@ const projetos = {
         ],
         video: [
             "./assents/flowmanager/09-video.mp4"
-        ]
+        ],
+        repositorio: "https://github.com/MarlonOliveiraa/HackatonVoucherSenac"
     },
 
     calmamente: {
@@ -73,7 +74,8 @@ const projetos = {
         ],
         video: [
             "./assents/calmaMente/09-video.mp4"
-        ]
+        ],
+        repositorio: "https://github.com/NicolleZaleski/CalmaMente"
     },
 
     etcom: {
@@ -105,7 +107,8 @@ const projetos = {
             "./assents/et-com/19-cliente.mp4",
             "./assents/et-com/20-associado.mp4",
             "./assents/et-com/21-administrador.mp4"
-        ]
+        ],
+        repositorio: "https://github.com/From-Devs/projeto-integrador-et.com"
     }
 }
 // endregion
@@ -124,6 +127,7 @@ const popupPapel = document.getElementById("popupPapel");
 const popupTecnologias = document.getElementById("popupTecnologias");
 const areaMidia = document.getElementById("areaMidia");
 const contadorMidia = document.getElementById("contadorMidia");
+const meuRepositorio = document.getElementById("meuRepositorio");
 
 // Abrir pop-up
 function abrirProjeto(idProjeto){
@@ -143,6 +147,7 @@ function abrirProjeto(idProjeto){
     popupDescricao.textContent = projeto.descricao; 
     popupPapel.textContent = projeto.papel;
     popupTecnologias.textContent = projeto.tecnologias;
+    meuRepositorio.href = projeto.repositorio;
 
     midiasAtuais = [];
 

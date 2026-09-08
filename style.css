@@ -811,6 +811,40 @@ html{
     font-weight: 500;
 }
 
+.meuRepositorio{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: fit-content;
+    margin: 20px auto 25px;
+    padding: 12px 22px;
+    box-sizing: border-box;
+    border: 1px solid rgb(76,114,41);
+    border-radius: 10px;
+    background-color: rgb(19,27,21);
+    color: rgb(232,226,210);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.meuRepositorio i{
+    font-size: 20px;
+}
+
+.meuRepositorio p{
+    margin: 0;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.meuRepositorio:hover{
+    background-color: rgb(76,114,41);
+    border-color: rgb(182,140,6);
+    color: white;
+}
+
 
 /* #endregion */
 
